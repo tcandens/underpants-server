@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "env": {
+    "VAPID_PUBLIC": "BAgnzA01v9gf9quZiGKTEriRtErfQ1E6XmbcLwcqS0RGO1NFRA1qNKQZlXjqzUQs_NdrfJTxnWhgomon26uwwLc",
+    "VAPID_PRIVATE": "6qqZjCDJJJIXw0zz4aWd32_qEwpXGngaowel3Iu6TN0"
+  }
+}
