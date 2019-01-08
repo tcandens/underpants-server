@@ -1,5 +1,5 @@
 import React from 'react'
-import App, {Container} from 'next/app'
+import App, { Container } from 'next/app'
 import 'tachyons/css/tachyons.css'
 
 export default class MyApp extends App {
@@ -10,12 +10,11 @@ export default class MyApp extends App {
       pageProps = Component.getInitialProps(ctx)
     }
 
-    return {pageProps}
+    return { pageProps }
   }
 
-
   render() {
-    const {Component, pageProps} = this.props
+    const { Component, pageProps } = this.props
 
     return (
       <Container>

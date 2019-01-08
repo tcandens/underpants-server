@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {urlBase64ToUint8Array} from '../lib/utils'
+import { urlBase64ToUint8Array } from '../lib/utils'
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Index extends React.Component {
   }
   register() {
     if ('serviceWorker' in navigator) {
-      const sw =require('file-loader?outputPath=static&name=[name]-[hash:6].[ext]!../lib/service-worker')
+      const sw = require('file-loader?outputPath=static&name=[name]-[hash:6].[ext]!../lib/service-worker')
       navigator.serviceWorker
         .register(sw)
         .then(async registration => {
@@ -41,7 +41,7 @@ export default class Index extends React.Component {
             body: JSON.stringify({
               subscription,
               email: this.state.email,
-            })
+            }),
           })
         })
         .catch(e => console.warn(e))
@@ -50,7 +50,7 @@ export default class Index extends React.Component {
 
   handleChange(event) {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     })
   }
 
